@@ -1,0 +1,825 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-decoration-color: black;
+}
+
+
+ol, ul {
+    list-style: none;
+  }
+/*=====================================================Header========================================*/
+a:-webkit-any-link {
+    color: rgba(7, 7, 7, 0.945);
+}
+a:-webkit-any-link:hover {
+    color:#ff0000;
+}
+.wrapper{
+  background-color: white;
+  
+  
+    
+}
+.header{
+    padding: 30px 20px; 
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    height:40px ;
+    margin-top: 20px;
+    
+}
+.logo{
+   display: flex;
+    flex: 2;
+
+}
+img{
+    max-width: 100%;
+    height:auto ;
+    vertical-align: middle
+}
+input[type="search"] {
+    height: 40px;
+    width: 100%;
+    border-color: #d0ceca;
+    border-radius: 5px 0px 0px 5px;
+    border-width: 1px;
+    border-right-width: 0px;
+    padding-left: 10px;
+    font: 18px;
+    flex: 7;
+}
+
+form {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button.btnSearch {
+    flex: 1;
+    height: 40px;
+   
+    text-align: center;
+    background: #00b8ff;
+    border-style: none;
+    border-width: 1px;
+    border-radius: 0px 5px 5px 0px;
+  
+    border-left-width: 0px;
+    cursor: pointer;
+}
+button.btnSearch:hover{
+    background: #00ffff20415718;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.search{    
+    
+    display: flex;
+    flex: 3;
+}
+.listMenu{
+    flex: 3;
+    display: flex;
+    flex-direction: "row";
+    justify-content: space-around
+}
+i.fa.fa-search.fa-2x {
+    color: white;
+}
+
+
+.txtMenu{
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    transform: scaleX(1);
+    cursor: pointer;
+    transition-duration: 0.5s;
+    
+
+}
+.txtMenu:hover{
+    background: blue;
+    color: white;
+    
+    transform: scaleX(1.2);
+    transition-duration: 0.5s;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    
+}
+.active {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #00b8ff;
+    color: white;
+    transform: scalX(1.2);
+}
+
+
+/*-------- dropdow*/
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+  border: 1px solid #FDC215;
+  top: 40px;
+  left: 5px;
+  
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transform: scaleX(0.7);
+  transition-duration: 0.5s;
+}
+
+.dropdown-content a:hover {
+    background-color: #FDC215; 
+    color: white;
+    transform: scaleX(1);
+    transition-duration: 0.5s;
+}
+
+.txtMenu:hover .dropdown-content {
+ 
+  display: block;
+  
+}
+
+.login{
+    position: absolute;
+    top: 40px;
+    left: -150px;
+}
+/*==================================================Slide=========================================*/
+.slide{
+    margin-top: 20px;
+    background-color: #FDC215;
+    height: 260px;
+    width: 100%;
+  
+   
+}
+.mySlides {
+    display:none;
+    width:100%;
+    height: 260px;
+  
+  
+    
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.iconNext {
+    position: absolute;
+    top: 260px;
+    right: 0px;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    width: 30px;
+  transform: scaleX(1);
+
+}
+
+.iconPre {
+    top: -177px;
+    left: 10px;
+    position: relative;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    width: 30px;
+  transform: scaleX(1);
+    
+}
+.iconNext:hover{
+    color: #FDC215;
+  transform: scaleX(1.2);
+   
+}
+.iconPre:hover{
+    color: #FDC215;
+  transform: scaleX(1.2);
+    
+}
+/*===============================banner============================================================"Pattaya", sans-serif*/
+.bannerContainer{
+    margin-top: 50px;
+    display: flex;
+    flex: 1;    
+    flex-direction: row;   
+    justify-content: space-around;
+    height: 300px;
+   
+}
+.layer{
+    display: flex;
+    flex: 1;   
+    margin: 30px;
+    border: 5px solid #FDC215;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative;
+  
+    
+
+}
+.over{
+    position: absolute;    
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+.over1{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: 2;
+    transition-duration: 1s;
+}
+.over2{
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+   z-index: 3;
+   font-family: 'Mansalva';
+   color: white;
+   font-size: 30px;
+   font-weight: bold;
+   text-align: center;
+   
+  
+    
+}
+.imgLayer{
+    width: 100%;
+    height: 100%;
+    transition-duration: 1s;
+    transform: scale(1);
+    
+}
+  
+.layer:hover .imgLayer{
+    transition-duration: 2s;
+    transform: scale(1.5);
+}
+.layer:hover .over1{
+    transition-duration: 1s;
+    opacity: 0.7;   
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    cursor: default;
+    color: white;
+    font-family: 'Mansalva';
+    font-weight: bold;
+    font-size: 30px;
+}
+/*================================================ line ===============================================*/
+.lineContainer{
+display: flex;
+flex: 1;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px 40px 10px 40px;
+}
+.line{
+    display: flex;
+    flex: 5;
+    border:1px solid #E7E5DA;
+    height: 2px;
+    background-color: #E7E5DA;
+    
+
+}
+.txtLine{
+    color: #5C2200;
+    flex: 5;    
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Be Vietnam';
+}
+/*===================================Products=========================================*/
+.productWrapper{
+ display: flex;
+
+ flex-direction: column;
+}
+.productContainer{    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.product{
+  display: flex;
+  width: 224px;
+  flex-direction: column;
+  
+  height: 390px;
+  margin: 10px 35px;
+  border: 1px solid #fd1515;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #00b8ff14;  
+  
+}
+.product:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+   
+}
+.product:hover .productImage{
+    background-color: rgba(0,0,0,0.1);
+    opacity: 0.8;
+}
+.productImage{
+    flex: 10;   
+    width: 100%;
+    height: 100%;;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.percent{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 5px;
+    left: 160px;
+    background-color: #00b8ff;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    z-index: 2;
+}
+.productTitle{
+   flex: 2;  
+   display: flex;
+   align-items: center;
+   text-align: center;
+   color: black;
+   font-weight: 400;
+   font-size: 16px;
+   font-family: 'Be Vietnam';
+   cursor: default;
+   justify-content: center;
+
+}
+.productPrice{
+   flex: 2;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Be Vietnam';
+   cursor: default;
+}
+.txtPrice{
+    margin-right: 10px;
+    color: #B3B3B3;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.txtPriceSale{
+    color: #FF0000;
+    font-size: 20px;
+    font-weight:300;
+
+}
+.productButton{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  
+}
+.button{
+    background: #ff0000;
+    width: 120px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 20px;
+    font-family: 'Be Vietnam';
+    font-size: 15px; 
+    transform: scaleX(0.9);   
+    transition-duration: 0.4s;
+}
+.button:hover{
+    box-shadow:1px 3px 6px 3px #13121242;
+    transform: scaleX(1);
+    transition-duration: 0.4s;
+
+
+}
+.btnXemThem{
+    margin:20px;
+}
+/*=============================================Slick Slider ======================================*/
+.quaBieu{
+    height: 600px;
+    width: 100%;
+    background-image: url("../images/monte.jpg");
+    border: 5px solid #FDC215;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+.swiper-container {
+    width: 100%;
+    height: 390px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .swiper-slide{
+      display: flex;
+  }
+  /*======================================= FOOTER =================================*/
+  .footerWrapper{
+      margin-top: 80px;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      height: 400px;
+      font-family:  'Be Vietnam';
+        background: #1e1e1e;
+  
+      
+
+  }
+  .footerContainer{
+      background-color: black;
+      opacity: 0.7;
+      display: flex;
+      flex: 10;
+      
+      color: #fff;
+  }
+  .end{
+      flex: 1;
+      display: flex;
+      background-color: #FDC215;
+      color: #FF0000;
+      justify-content: center;
+      align-items: center;
+     
+  }
+  .txtFooter{
+      flex: 1px;
+     
+      margin: 40px;
+
+  }
+  .titleFooter{
+      margin-bottom: 40px;
+  }    
+  /*================================================== San Pham ==========================================*/
+  .banner{
+      width: 100%;
+      height: 100px;
+      background-image: url("../images/ef35384a64b187efdea0.jpg");
+      
+
+      
+  }
+  .content{
+    display: flex;
+    flex: 1;
+    font-family: 'Be Vietnam';
+    margin: 80px;
+  }
+  .menu{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    height: 380px;    
+    border: 1px solid #FDC215;
+  }
+.menuTitle{
+    color: black;
+    font-weight: bold;
+    background-color: #00b8ff;    
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    
+
+}
+.menuItem{
+	text-align: center;
+  margin: 8px;
+  border: 1px solid #00b8ff;
+  border-top-width: 1px ;
+  border-left-width: 60px;
+  border-right-width: 60px;
+ 
+  line-height: 26px;
+
+  
+}
+  .items{
+    display: flex;
+    flex: 7;
+    margin-left: 20px;
+
+  }
+  .productType{
+      height: 300px;
+      margin: 10px;
+     
+  }
+  /*=====================================Contact================================*/
+.contactContainer{
+    margin-top: 50px; 
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    font-family: 'Be Vietnam';
+}
+.contact{
+    height: 260px;
+    margin-left: 200px;
+    margin-right: 50px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+       
+
+}
+.formContact{
+    padding: 30px;
+    margin-left: 50px;
+    margin-right: 100px;
+    height: 360px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid #ff0000;
+    border-radius: 20px;
+    
+
+   
+}
+.inputContact{
+    height: 35px;
+    border: 1px solid #FDC215;
+    border-radius: 10px;
+    background-color: #FFFDF1;
+    font-size: 16px;
+    font-weight: bold;
+    padding:5px;
+}
+.areaContact{
+    height: 80px;
+    border: 1px solid #FDC215;
+    border-radius: 10px;
+    background-color: #FFFDF1;
+    font-size: 15px;
+    font-weight: bold;
+    padding:5px;
+}
+.contactButton{
+    width: 350px;
+    align-self: center;
+}
+
+
+/*===================================================================*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.container {
+  margin: 2em auto;
+  width: 90%;
+  max-width: 1100px;
+}
+@media only screen and (min-width: 815px) {
+  .container {
+    margin: 7em auto;
+  }
+}
+
+.widget {
+  position: relative;
+  margin: 0 auto;
+  max-width: 320px;
+  height: 875px;
+  background: #fff;
+}
+@media only screen and (min-width: 815px) {
+  .widget {
+    margin: 0;
+    max-width: 800px;
+    height: auto;
+  }
+}
+
+figure {
+  margin: 0;
+}
+figure::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+@media only screen and (min-width: 815px) {
+  figure img {
+    float: left;
+    width: 45%;
+  }
+}
+figure figcaption {
+  padding: 2.25em 2.5em 0;
+}
+@media only screen and (min-width: 815px) {
+  figure figcaption {
+    float: left;
+    width: 55%;
+  }
+}
+figure figcaption h3, figure figcaption .tag {
+  font-family: 'Playfair Display', serif;
+}
+figure figcaption h3 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 700;
+  color: #3b3b3b;
+}
+figure figcaption .tag {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 0.9375em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #b26943;
+}
+figure figcaption p {
+  margin: 2em 0;
+  font-size: 0.875em;
+  line-height: 1.375em;
+}
+figure figcaption .rating {
+  color: #d08946;
+}
+figure figcaption .rating .fa {
+  margin-right: 5px;
+}
+figure figcaption .rating .fa:last-child {
+  margin-right: 0;
+}
+
+.slideshow-nav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+  height: 125px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/203277/ricepaper2.png") repeat;
+  -webkit-box-shadow: inset 0px 10px 5px -6px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: inset 0px 10px 5px -6px rgba(0, 0, 0, 0.08);
+  box-shadow: inset 0px 10px 5px -6px rgba(0, 0, 0, 0.08);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@media only screen and (min-width: 815px) {
+  .slideshow-nav {
+    width: 55%;
+  }
+}
+.slideshow-nav #prev, .slideshow-nav #next {
+  width: 50%;
+  height: 100%;
+  line-height: 125px;
+  text-align: center;
+  cursor: pointer;
+  color: #beaea0;
+}
+.slideshow-nav #prev:hover, .slideshow-nav #prev:focus, .slideshow-nav #next:hover, .slideshow-nav #next:focus {
+  color: #a08872;
+}
+.slideshow-nav #prev:active, .slideshow-nav #next:active {
+  color: #856e5a;
+}
+@media only screen and (min-width: 815px) {
+  .slideshow-nav #prev, .slideshow-nav #next {
+    width: auto;
+    height: 0;
+  }
+  .slideshow-nav #prev span, .slideshow-nav #next span {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #d3c8be;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    font-size: 0.5em;
+    color: #d3c8be;
+  }
+  .slideshow-nav #prev span:hover, .slideshow-nav #prev span:focus, .slideshow-nav #next span:hover, .slideshow-nav #next span:focus {
+    border: 2px solid #beaea0;
+    color: #beaea0;
+  }
+  .slideshow-nav #prev span:active, .slideshow-nav #next span:active {
+    border: 2px solid #aa9581;
+    color: #aa9581;
+  }
+}
+.slideshow-nav #prev {
+  float: left;
+  border-right: 1px solid #beaea0;
+}
+@media only screen and (min-width: 815px) {
+  .slideshow-nav #prev {
+    border-right: 0;
+    margin-left: 2em;
+  }
+}
+.slideshow-nav #next {
+  float: right;
+}
+@media only screen and (min-width: 815px) {
+  .slideshow-nav #next {
+    margin-right: 2em;
+  }
+}
+.slideshow-nav #thumbnails {
+  display: none;
+}
+@media only screen and (min-width: 815px) {
+  .slideshow-nav #thumbnails {
+    display: block;
+    text-align: center;
+  }
+  .slideshow-nav #thumbnails .thumb {
+    margin: 0 0.5em;
+    line-height: 100px;
+  }
+  .slideshow-nav #thumbnails .thumb img {
+    width: 75px;
+    height: 75px;
+    border: 3px solid #fff;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+  }
+  .slideshow-nav #thumbnails .cycle-pager-active img {
+    border: 3px solid #d3c8be;
+  }
+}
